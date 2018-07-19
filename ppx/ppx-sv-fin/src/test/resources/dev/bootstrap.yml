@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: sv-xy
+    label: 校园内容服务
+  cloud:
+    config: 
+      uri: http://127.0.0.1:7900/
+      name: sv-xy,comm

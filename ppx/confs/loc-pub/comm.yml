@@ -1,0 +1,31 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+redis:
+  host: 106.15.199.123
+  port: 6379
+  password: zaq1xsw2@redis
+  database: 6
+  pool:
+    maxTotal: 20
+    maxIdle: 10
+    maxWaitMillis: -1
+mq:
+  namesrv: 106.15.199.123:9876
+res:
+  file_p: E:/show/ppx/file/file_p
+  file_s: E:/show/ppx/file/file_s
+  file_u: E:/show/ppx/file/file_u
+  ver: 201807191200
+host:
+  loc: true
+  res: http://127.0.0.1/res
+  zuul-adm: http://127.0.0.1/zuul-adm
+  zuul-xy: http://127.0.0.1/zuul-xy
+  zuul-wx: http://127.0.0.1/zuul-wx
+  zuul-ws: http://127.0.0.1/ws
+  zuul-pad: http://127.0.0.1/pad
+  spa-adm: http://127.0.0.1/adm
+  spa-xy: http://127.0.0.1/xy
+  spa-wx: http://127.0.0.1/wx

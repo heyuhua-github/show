@@ -1,0 +1,10 @@
+SSH			106.15.199.123	22		root	zaq1xsw2@ppx
+Mysql		106.15.199.123	3306	root	Zaq1xsw2@mysql
+Redis		106.15.199.123	6379			zaq1xsw2@redis
+RabbitMq	106.15.199.123	5672	ppx		ppx123
+
+应用目录：
+/usr/app/edu/apps
+启动脚本：sv-**.sh start/stop/restart c
+			第一个参数(必须)：start启动	stop停止	restart重启
+			第二个参数(可选)：c清理日志

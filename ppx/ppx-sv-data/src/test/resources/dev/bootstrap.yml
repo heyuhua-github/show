@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: sv-data
+    label: 基础数据服务
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900/
+      name: sv-data,comm

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.show</groupId>
+		<artifactId>show</artifactId>
+		<version>1.0.0</version>
+	</parent>  
+	<artifactId>ppx</artifactId>
+	<packaging>pom</packaging>
+
+	<!-- 模块 -->  
+	<modules>
+		<module>ppx-cloud-conf</module>
+		<module>ppx-cloud-eureka</module>
+		<module>ppx-comm</module>
+		<module>ppx-comm-cloud</module>
+		<!-- service -->
+		<module>ppx-sv-cir</module>
+		<module>ppx-sv-data</module>
+		<module>ppx-sv-fin</module>  
+		<module>ppx-sv-msg</module>
+		<module>ppx-sv-sys</module>
+		<!-- zuul -->
+		<module>ppx-zuul-adm</module>
+		<module>ppx-zuul-wx</module>
+	</modules>
+</project>

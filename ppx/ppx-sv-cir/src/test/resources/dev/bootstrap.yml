@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: sv-kq
+    label: 考勤服务
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900/
+      name: sv-kq,comm

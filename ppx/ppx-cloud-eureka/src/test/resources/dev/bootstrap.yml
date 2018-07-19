@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: cloud-eureka
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900/
+      name: cloud-eureka

@@ -1,0 +1,268 @@
+[2018-03-13 17:43:41] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4: startup date [Tue Mar 13 17:43:41 CST 2018]; root of context hierarchy
+[2018-03-13 17:43:42] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[2018-03-13 17:43:42] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:42] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e3b04d1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:43] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://127.0.0.1:7900/
+[2018-03-13 17:43:43] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=sv-xy,comm, profiles=[default], label=null, version=null, state=null
+[2018-03-13 17:43:43] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:D:/integrated/integrated/edu/confs/loc-prv/comm.yml'}, MapPropertySource {name='file:D:/integrated/integrated/edu/confs/loc-prv/sv-xy.yml'}]]
+[2018-03-13 17:43:43] INFO  com.integrated.edu.Application - No active profile set, falling back to default profiles: default
+[2018-03-13 17:43:43] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b58ed3c: startup date [Tue Mar 13 17:43:43 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4
+[2018-03-13 17:43:45] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-03-13 17:43:46] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c64c6a19-4ae0-33aa-8313-15a6a6262e13
+[2018-03-13 17:43:46] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:46] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.integrated.edu.xy.comm.service.DataService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:46] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.integrated.edu.xy.sys.service.LoginService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:46] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7964a22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:46] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e3b04d1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:47] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8005 (http)
+[2018-03-13 17:43:47] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[2018-03-13 17:43:47] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[2018-03-13 17:43:47] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-03-13 17:43:47] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3749 ms
+[2018-03-13 17:43:47] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+[2018-03-13 17:43:47] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[2018-03-13 17:43:47] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-03-13 17:43:47] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+[2018-03-13 17:43:47] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'SvMvcFilter' to urls: [/*]
+[2018-03-13 17:43:47] INFO  com.integrated.edu.comm.restful.sv.SvMvcFilter - SvMvcFilter inited, debug is 'true'
+[2018-03-13 17:43:47] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '静态资源目录' is D:\integrated\integrated\edu\file\file_p
+[2018-03-13 17:43:47] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '公开文件目录' is D:\integrated\integrated\edu\file\file_u
+[2018-03-13 17:43:47] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '公开文件临时目录' is D:\integrated\integrated\edu\file\file_u\_temp
+[2018-03-13 17:43:47] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '私有文件目录' is D:\integrated\integrated\edu\file\file_s
+[2018-03-13 17:43:47] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '私有文件临时目录' is D:\integrated\integrated\edu\file\file_s\_temp
+[2018-03-13 17:43:48] 【广播服务】服务启动, ClientConfig [namesrvAddr=192.168.1.25:9876, clientIP=10.86.76.140, instanceName=sv-xy, clientCallbackExecutorThreads=4, pollNameServerInterval=30000, heartbeatBrokerInterval=30000, persistConsumerOffsetInterval=5000, unitMode=false, unitName=null, vipChannelEnabled=true]
+[2018-03-13 17:43:48] 【考勤广播服务】服务启动, ClientConfig [namesrvAddr=192.168.1.25:9876, clientIP=10.86.76.140, instanceName=sv-xy, clientCallbackExecutorThreads=4, pollNameServerInterval=30000, heartbeatBrokerInterval=30000, persistConsumerOffsetInterval=5000, unitMode=false, unitName=null, vipChannelEnabled=true]
+[2018-03-13 17:43:48] Redis >>> 192.168.1.25:6379 >> 6
+[2018-03-13 17:43:49] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:43:49] INFO  c.i.edu.comm.cloud.log.impl.LogServiceImpl - 日志服务启动.
+[2018-03-13 17:43:49] INFO  com.integrated.comm.mybatis.SQLInterceptor - 初始化MyBatis拦截器并加载SQL打印服务：com.integrated.comm.mybatis.SQLPrinterDefaultImpl@6af65f29
+[2018-03-13 17:43:50] 【广播服务】订阅, topic:EDU-BC-SCH, tags:del || cla_del, listener:SV-XY, instance:null
+[2018-03-13 17:43:50] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@696fad31: startup date [Tue Mar 13 17:43:50 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b58ed3c
+[2018-03-13 17:43:50] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/404]}" onto public void com.integrated.edu.comm.restful.sv.SvMvcController.e404(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/405]}" onto public void com.integrated.edu.comm.restful.sv.SvMvcController.e405(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/403]}" onto public void com.integrated.edu.comm.restful.sv.SvMvcController.e403(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/500]}" onto public void com.integrated.edu.comm.restful.sv.SvMvcController.e500(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/400]}" onto public void com.integrated.edu.comm.restful.sv.SvMvcController.e400(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/album_del],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.String> com.integrated.edu.xy.mien.web.XyMienController.albumDel(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/album_get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.mien.XyMienAlbum> com.integrated.edu.xy.mien.web.XyMienController.albumGet(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/mien_save],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.mien.web.XyMienController.meinSave(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/album_upd],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.String> com.integrated.edu.xy.mien.web.XyMienController.albumUpd(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/album_add],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.String> com.integrated.edu.xy.mien.web.XyMienController.albumAdd(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/album_list],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.mien.XyMienAlbum>> com.integrated.edu.xy.mien.web.XyMienController.albumList(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.Boolean)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/mien/mien_get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.mien.XyMien> com.integrated.edu.xy.mien.web.XyMienController.mienGet(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/grp_add],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.grpAdd(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/grp_get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.moral.XyMoralGrp> com.integrated.edu.xy.moral.web.XyMoralController.grpGet(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.Boolean)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/mc_list_rates],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.moral.XyMoralClaRates>> com.integrated.edu.xy.moral.web.XyMoralController.mcListRates(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/grp_list],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.moral.XyMoralGrp>> com.integrated.edu.xy.moral.web.XyMoralController.grpList(com.integrated.edu.comm.Ui,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/grp_del],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.grpDel(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/mc_get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.moral.XyMoralCla> com.integrated.edu.xy.moral.web.XyMoralController.mcGet(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/mc_rate],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.moral.XyMoralClaRateRes> com.integrated.edu.xy.moral.web.XyMoralController.mcRate(com.integrated.edu.comm.Ui,com.integrated.edu.xy.moral.XyMoralClaRate)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/grp_upd_items],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.grpUpd(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/grp_upd],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.grpUpd(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,com.integrated.edu.comm.Status,boolean,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/rater_save],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.raterSave(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/mc_reinit],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.mcReinit(com.integrated.edu.comm.Ui,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/mc_statis],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.moral.XyMoralClaStatis> com.integrated.edu.xy.moral.web.XyMoralController.mcStatis(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/rater_get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.moral.XyMoralRaterStu> com.integrated.edu.xy.moral.web.XyMoralController.raterGet(com.integrated.edu.comm.Ui,java.lang.String,java.lang.Boolean)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moral/mc_rerank],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.moral.web.XyMoralController.mcRerank(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notice/add],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.notice.web.XyNoticeController.add(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notice/get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.notice.XyNotice> com.integrated.edu.xy.notice.web.XyNoticeController.get(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.Boolean)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notice/del],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.notice.web.XyNoticeController.del(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notice/list_byut],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.notice.XyNotice>> com.integrated.edu.xy.notice.web.XyNoticeController.listByUt(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notice/paging],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.comm.mybatis.Paging> com.integrated.edu.xy.notice.web.XyNoticeController.paging(com.integrated.edu.comm.Ui,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notice/list_byrt],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.notice.XyNotice>> com.integrated.edu.xy.notice.web.XyNoticeController.listByRt(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pub/login],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.sys.XyLoginResult> com.integrated.edu.xy.sys.web.LoginController.login(java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pub/func_list],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.sys.XyFunc>> com.integrated.edu.xy.sys.web.LoginController.funcList()
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/add],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.sys.web.TeacherRoleController.add(com.integrated.edu.comm.Ui,com.integrated.edu.xy.sys.TeacherRole)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/get],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.xy.sys.TeacherRole> com.integrated.edu.xy.sys.web.TeacherRoleController.get(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/del],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.sys.web.TeacherRoleController.del(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/paging],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.comm.mybatis.Paging> com.integrated.edu.xy.sys.web.TeacherRoleController.paging(javax.servlet.http.HttpServletRequest,com.integrated.edu.comm.Ui,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/list_sch_role],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.sys.TeacherRole>> com.integrated.edu.xy.sys.web.TeacherRoleController.listSchRole(com.integrated.edu.comm.Ui,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/list_sch_func],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.util.List<com.integrated.edu.xy.sys.XyFunc>> com.integrated.edu.xy.sys.web.TeacherRoleController.listSchFunc(com.integrated.edu.comm.Ui,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/upd],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.sys.web.TeacherRoleController.upd(com.integrated.edu.comm.Ui,com.integrated.edu.xy.sys.TeacherRole)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/func_save],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.xy.sys.web.TeacherRoleController.funcSave(com.integrated.edu.comm.Ui,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-03-13 17:43:51] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:52] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b58ed3c: startup date [Tue Mar 13 17:43:43 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4
+[2018-03-13 17:43:52] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[2018-03-13 17:43:52] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-03-13 17:43:52] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-03-13 17:43:52] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/springfox-swagger-ui/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-03-13 17:43:52] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b58ed3c: startup date [Tue Mar 13 17:43:43 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4
+[2018-03-13 17:43:52] Swagger inited.
+[2018-03-13 17:43:52] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2018-03-13 17:43:52] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2018-03-13 17:43:52] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2018-03-13 17:43:52] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2018-03-13 17:43:54] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-03-13 17:43:54] SQL: select hid as "hid", cid as "cid", motto as "motto", photo as "photo", ut as "ut" from xy_c_mien where hid=? and cid=? ## arg:{hid=00000001, param1=00000001, cid=00000001201803131034460667269874, param2=00000001201803131034460667269874}
+[2018-03-13 17:43:54] SQL: delete from xy_c_mien_album where hid=? and cid=? ## arg:{hid=00000001, param1=00000001, cid=00000001201803131034460667269874, param2=00000001201803131034460667269874}
+[2018-03-13 17:43:55] WARN  o.s.c.s.e.EurekaStarterDeprecationWarningAutoConfiguration - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5b58ed3c,type=ConfigurationPropertiesRebinder]
+[2018-03-13 17:43:55] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-03-13 17:43:55] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+[2018-03-13 17:43:56] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2018-03-13 17:43:56] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[2018-03-13 17:43:56] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[2018-03-13 17:43:56] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[2018-03-13 17:43:56] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[2018-03-13 17:43:56] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[2018-03-13 17:43:57] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1520934237734 with initial instances count: 2
+[2018-03-13 17:43:57] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application sv-xy with eureka with status UP
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1520934237744, current=UP, previous=STARTING]
+[2018-03-13 17:43:57] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[2018-03-13 17:43:57] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SV-XY/10.86.76.140:sv-xy:8005: registering service...
+[2018-03-13 17:43:57] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SV-XY/10.86.76.140:sv-xy:8005 - registration status: 204
+[2018-03-13 17:43:57] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2018-03-13 17:43:57] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+[2018-03-13 17:43:58] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader - Trying to infer dataType com.integrated.edu.comm.Status
+[2018-03-13 17:43:58] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: grpUpdUsingPOST_1
+[2018-03-13 17:43:58] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+[2018-03-13 17:43:58] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: delUsingPOST_1
+[2018-03-13 17:43:58] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingPOST_1
+[2018-03-13 17:43:58] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pagingUsingPOST_1
+[2018-03-13 17:43:58] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2018-03-13 17:43:58] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+[2018-03-13 17:43:58] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+[2018-03-13 17:43:58] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-03-13 17:43:58] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8005 (http)
+[2018-03-13 17:43:58] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8005
+[2018-03-13 17:43:58] INFO  com.integrated.edu.Application - Started Application in 17.902 seconds (JVM running for 18.944)
+[2018-03-13 17:44:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:44:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:45:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:45:33] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-03-13 17:45:33] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-03-13 17:45:33] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 138 ms
+[2018-03-13 17:45:33] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:45:34] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=1, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:45:34] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 0,10 ## arg:Paging [currentPage=1, pageSize=10, amount=11, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:45:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:46:01] URL: http://127.0.0.1:8005/role/list_sch_func
+[2018-03-13 17:46:01] SQL: select d.id as "id", d.name as "name", d.menu as "menu", d.url as "url", d.url_target as "urlTarget", d.sort as "sort", d.pid as "pid", d.readonly as "readonly", d.url_p as "urlP", d.ut as "ut" from xy_sys_func d inner join xy_sys_func_sch f on d.id = f.func_id where f.hid = ? order by d.sort asc ## arg:00000001
+[2018-03-13 17:46:01] URL: http://127.0.0.1:8005/role/get
+[2018-03-13 17:46:01] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role where id=? ## arg:00000001201802261818372740143390
+[2018-03-13 17:46:01] SQL: select d.id from xy_sys_func d inner join xy_sys_func_sch_role f on d.id = f.func_id where f.role_id = ? order by d.sort asc ## arg:00000001201802261818372740143390
+[2018-03-13 17:46:08] URL: http://127.0.0.1:8005/role/add
+[2018-03-13 17:46:08] SQL: insert into b_teacher_role (id, hid, name, kq, sort, readonly, tnum,ut) values(?,?,?,?,?,?,?,?) ## arg:com.integrated.edu.xy.sys.TeacherRole@6a82a95c
+[2018-03-13 17:46:08] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:46:08] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=1, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:08] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 0,10 ## arg:Paging [currentPage=1, pageSize=10, amount=12, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:10] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:46:10] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=2, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:10] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 10,10 ## arg:Paging [currentPage=2, pageSize=10, amount=12, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:12] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:46:12] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=1, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:12] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 0,10 ## arg:Paging [currentPage=1, pageSize=10, amount=12, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:18] URL: http://127.0.0.1:8005/role/add
+[2018-03-13 17:46:18] SQL: insert into b_teacher_role (id, hid, name, kq, sort, readonly, tnum,ut) values(?,?,?,?,?,?,?,?) ## arg:com.integrated.edu.xy.sys.TeacherRole@7d1f8ecf
+[2018-03-13 17:46:18] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:46:18] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=1, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:18] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 0,10 ## arg:Paging [currentPage=1, pageSize=10, amount=13, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:21] URL: http://127.0.0.1:8005/role/del
+[2018-03-13 17:46:21] SQL: delete from b_teacher_role where id=? and readonly = 0 ## arg:00000001201803131746181218676339
+[2018-03-13 17:46:21] SQL: delete from xy_sys_func_sch_role where role_id = ? ## arg:00000001201803131746181218676339
+[2018-03-13 17:46:21] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:46:21] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=1, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:21] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 0,10 ## arg:Paging [currentPage=1, pageSize=10, amount=12, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:27] URL: http://127.0.0.1:8005/role/del
+[2018-03-13 17:46:27] SQL: delete from b_teacher_role where id=? and readonly = 0 ## arg:00000001201803131746084056131401
+[2018-03-13 17:46:27] SQL: delete from xy_sys_func_sch_role where role_id = ? ## arg:00000001201803131746084056131401
+[2018-03-13 17:46:27] URL: http://127.0.0.1:8005/role/paging
+[2018-03-13 17:46:27] SQL: select count(*) from b_teacher_role WHERE hid = ? order by sort asc,ut desc ## arg:Paging [currentPage=1, pageSize=10, amount=0, pages=0, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:27] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role WHERE hid = ? order by sort asc,ut desc limit 0,10 ## arg:Paging [currentPage=1, pageSize=10, amount=11, pages=2, params={hid=00000001}, orders=null]
+[2018-03-13 17:46:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:46:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:47:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:47:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:48:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:48:57] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:48:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:48:59] URL: http://127.0.0.1:8005/role/list_sch_func
+[2018-03-13 17:48:59] SQL: select d.id as "id", d.name as "name", d.menu as "menu", d.url as "url", d.url_target as "urlTarget", d.sort as "sort", d.pid as "pid", d.readonly as "readonly", d.url_p as "urlP", d.ut as "ut" from xy_sys_func d inner join xy_sys_func_sch f on d.id = f.func_id where f.hid = ? order by d.sort asc ## arg:00000001
+[2018-03-13 17:48:59] URL: http://127.0.0.1:8005/role/get
+[2018-03-13 17:48:59] SQL: select id as "id", hid as "hid", name as "name", kq as "kq", sort as "sort", readonly as "readonly", tnum as "tnum", ut as "ut" from b_teacher_role where id=? ## arg:00000001201802261818372740143390
+[2018-03-13 17:48:59] SQL: select d.id from xy_sys_func d inner join xy_sys_func_sch_role f on d.id = f.func_id where f.role_id = ? order by d.sort asc ## arg:00000001201802261818372740143390
+[2018-03-13 17:49:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:49:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:50:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:50:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:51:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:51:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:52:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:52:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:53:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:53:57] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:53:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:54:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:54:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:55:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:55:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:56:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:56:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:57:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:57:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:58:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:58:57] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:58:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:59:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 17:59:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:00:00] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule task “sv-xy.XyMoralTask.cmRank”. (rmv from “10.86.76.102:sv-xy” and put to “10.86.76.140:sv-xy”)
+[2018-03-13 18:00:00] SQL: select distinct(hid) from xy_c_moral_cla where day=? ## arg:20180313
+[2018-03-13 18:00:00] SQL: select mc.id as "id", mc.gid as "gid", sum(mci.c_score_cur) as "score" from xy_c_moral_cla mc left join xy_c_moral_cla_item mci on mc.id = mci.rid where mc.hid=? and mc.day=? group by mc.id, mc.gid order by mc.gid asc ## arg:{hid=00000001, day=20180313, param1=00000001, param2=20180313}
+[2018-03-13 18:00:00] SQL: update xy_c_moral_cla set score=?,rank=? where id=? ## arg:Score [id=00000001201803131133283491051591, gid=00000001201803121144008720003056, score=30, rank=1]
+[2018-03-13 18:00:00] SQL: update xy_c_moral_cla set score=?,rank=? where id=? ## arg:Score [id=00000001201803131133283215596403, gid=00000001201803121144008720003056, score=30, rank=1]
+[2018-03-13 18:00:00] SQL: update xy_c_moral_cla set score=?,rank=? where id=? ## arg:Score [id=00000001201803131133283058042980, gid=00000001201803121143504510146393, score=30, rank=1]
+[2018-03-13 18:00:00] SQL: update xy_c_moral_cla set score=?,rank=? where id=? ## arg:Score [id=00000001201803131133282816197645, gid=00000001201803121143504510146393, score=30, rank=1]
+[2018-03-13 18:00:00] SQL: update xy_c_moral_cla set score=?,rank=? where id=? ## arg:Score [id=00000001201803131133282334322313, gid=00000001201803121143504510146393, score=30, rank=1]
+[2018-03-13 18:00:00] 【德育】统计学校【00000001/20180313】班级德育数据排名，耗时：56
+[2018-03-13 18:00:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:00:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:01:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:01:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:02:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:02:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:03:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:03:57] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 18:03:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:04:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:04:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:05:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:05:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:06:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:06:58] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:07:28] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:07:59] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:08:29] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:08:57] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 18:08:59] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:09:29] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:09:59] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:10:29] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:10:59] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:11:29] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:11:59] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:12:29] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.
+[2018-03-13 18:12:59] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:sv-xy”.

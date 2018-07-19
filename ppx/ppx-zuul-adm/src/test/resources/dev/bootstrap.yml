@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: zuul-adm
+    label: 管理平台
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900/
+      name: zuul-adm,comm

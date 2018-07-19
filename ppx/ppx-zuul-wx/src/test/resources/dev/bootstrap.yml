@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: zuul-wx
+    label: 公众号
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900/
+      name: zuul-wx,comm

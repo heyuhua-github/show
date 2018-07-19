@@ -1,0 +1,12 @@
+server:
+  port: 7900
+spring:
+  application:
+    name: cloud-conf
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:/usr/app/ppx/conf

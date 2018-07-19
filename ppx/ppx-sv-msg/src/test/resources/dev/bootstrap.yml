@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: sv-msg
+    label: 消息服务
+  cloud:
+    config:
+      uri: http://127.0.0.1:7900/
+      name: sv-msg,comm

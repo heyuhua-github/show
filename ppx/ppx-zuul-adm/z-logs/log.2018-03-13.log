@@ -1,0 +1,475 @@
+[2018-03-13 17:43:16] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@428640fa: startup date [Tue Mar 13 17:43:16 CST 2018]; root of context hierarchy
+[2018-03-13 17:43:16] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[2018-03-13 17:43:16] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:16] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cf99cf1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:17] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://127.0.0.1:7900/
+[2018-03-13 17:43:17] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=zuul-adm,comm, profiles=[default], label=null, version=null, state=null
+[2018-03-13 17:43:17] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource {name='file:D:/integrated/integrated/edu/confs/loc-prv/comm.yml'}, MapPropertySource {name='file:D:/integrated/integrated/edu/confs/loc-prv/zuul-adm.yml'}]]
+[2018-03-13 17:43:18] INFO  com.integrated.edu.Application - No active profile set, falling back to default profiles: default
+[2018-03-13 17:43:18] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5: startup date [Tue Mar 13 17:43:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@428640fa
+[2018-03-13 17:43:20] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2018-03-13 17:43:21] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'counterFactory' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulMetricsConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulMetricsConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration.class]]
+[2018-03-13 17:43:21] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=858df7c5-2e8d-374a-b745-907f94f7bbb7
+[2018-03-13 17:43:21] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:21] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.integrated.edu.zuul.adm.service.LoginService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:22] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$e5ac7262] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:22] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cf99cf1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2018-03-13 17:43:23] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8101 (http)
+[2018-03-13 17:43:23] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+[2018-03-13 17:43:23] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[2018-03-13 17:43:23] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-03-13 17:43:23] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5315 ms
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'zuulServlet' to [/zuul/*]
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+[2018-03-13 17:43:25] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+[2018-03-13 17:43:25] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '静态资源目录' is D:\integrated\integrated\edu\file\file_p
+[2018-03-13 17:43:25] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '公开文件目录' is D:\integrated\integrated\edu\file\file_u
+[2018-03-13 17:43:25] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '公开文件临时目录' is D:\integrated\integrated\edu\file\file_u\_temp
+[2018-03-13 17:43:25] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '私有文件目录' is D:\integrated\integrated\edu\file\file_s
+[2018-03-13 17:43:25] INFO  com.integrated.comm.utils.ext.FileUtils - Load folder for '私有文件临时目录' is D:\integrated\integrated\edu\file\file_s\_temp
+[2018-03-13 17:43:25] INFO  c.i.edu.comm.cloud.log.impl.LogServiceImpl - 日志服务启动.
+[2018-03-13 17:43:25] Redis >>> 192.168.1.25:6379 >> 6
+[2018-03-13 17:43:26] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:43:26] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2018-03-13 17:43:26] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2018-03-13 17:43:26] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@51d8f2f2
+[2018-03-13 17:43:26] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4adf3582: startup date [Tue Mar 13 17:43:26 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5
+[2018-03-13 17:43:26] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:27] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2018-03-13 17:43:27] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[2018-03-13 17:43:27] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[2018-03-13 17:43:27] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[2018-03-13 17:43:27] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[2018-03-13 17:43:27] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[2018-03-13 17:43:28] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2018-03-13 17:43:28] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1520934208348 with initial instances count: 1
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/500]}" onto public void com.integrated.edu.comm.restful.zuul.ZuulMvcController.e500(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/403]}" onto public void com.integrated.edu.comm.restful.zuul.ZuulMvcController.e403(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/405]}" onto public void com.integrated.edu.comm.restful.zuul.ZuulMvcController.e405(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/404]}" onto public void com.integrated.edu.comm.restful.zuul.ZuulMvcController.e404(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/400]}" onto public void com.integrated.edu.comm.restful.zuul.ZuulMvcController.e400(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.comm.sys.sa.SaLoginResult> com.integrated.edu.zuul.adm.web.LoginController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/vcode],methods=[GET]}" onto public void com.integrated.edu.zuul.adm.web.LoginController.vcode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout],methods=[GET || POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.Boolean> com.integrated.edu.zuul.adm.web.LoginController.logout(javax.servlet.http.HttpServletRequest)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/uname],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.String> com.integrated.edu.zuul.adm.web.LoginController.uname(javax.servlet.http.HttpServletRequest)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/vtoken],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<java.lang.String> com.integrated.edu.zuul.adm.web.LoginController.vtoken()
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/upload/upload],methods=[POST]}" onto public com.integrated.comm.restful.RestfulRes<com.integrated.edu.comm.restful.Uploader$UploadInfo> com.integrated.edu.comm.restful.Uploader.upload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[],java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-03-13 17:43:29] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/filters || /filters.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/routes || /routes.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.netflix.zuul.RoutesMvcEndpoint.reset()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/routes || /routes.json],methods=[GET],params=[format],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.cloud.netflix.zuul.RoutesMvcEndpoint.invokeRouteDetails(java.lang.String)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/routes || /routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.b.actuate.endpoint.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[2018-03-13 17:43:30] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5: startup date [Tue Mar 13 17:43:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@428640fa
+[2018-03-13 17:43:31] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[2018-03-13 17:43:31] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-03-13 17:43:31] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-03-13 17:43:31] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/springfox-swagger-ui/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-03-13 17:43:31] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5: startup date [Tue Mar 13 17:43:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@428640fa
+[2018-03-13 17:43:31] Swagger inited, host is 127.0.0.1/zuul-adm
+[2018-03-13 17:43:32] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6dfe567: startup date [Tue Mar 13 17:43:32 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5
+[2018-03-13 17:43:32] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:43:32] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2018-03-13 17:43:32] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2018-03-13 17:43:33] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:43:33] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-sv-sys
+[2018-03-13 17:43:33] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: sv-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sv-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[2018-03-13 17:43:33] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+[2018-03-13 17:43:33] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client sv-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sv-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@18d52456
+[2018-03-13 17:43:34] INFO  o.s.cloud.netflix.zuul.ZuulFilterInitializer - Starting filter initializer
+[2018-03-13 17:43:34] WARN  o.s.c.s.e.EurekaStarterDeprecationWarningAutoConfiguration - spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'routesEndpoint' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'routesMvcEndpoint' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'filtersEndpoint' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'routesEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=routesEndpoint,type=RoutesEndpoint]
+[2018-03-13 17:43:34] WARN  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with key 'routesEndpoint' has been registered as an MBean but has no exposed attributes or operations
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'routesMvcEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=routesMvcEndpoint,type=RoutesMvcEndpoint]
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'filtersEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=filtersEndpoint,type=FiltersEndpoint]
+[2018-03-13 17:43:34] WARN  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with key 'filtersEndpoint' has been registered as an MBean but has no exposed attributes or operations
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3d08f3f5,type=ConfigurationPropertiesRebinder]
+[2018-03-13 17:43:34] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+[2018-03-13 17:43:34] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+[2018-03-13 17:43:35] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+[2018-03-13 17:43:35] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application zuul-adm with eureka with status UP
+[2018-03-13 17:43:35] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1520934215034, current=UP, previous=STARTING]
+[2018-03-13 17:43:35] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-ADM/10.86.76.140:zuul-adm:8101: registering service...
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+[2018-03-13 17:43:35] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_ZUUL-ADM/10.86.76.140:zuul-adm:8101 - registration status: 204
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+[2018-03-13 17:43:35] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[2018-03-13 17:43:35] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+[2018-03-13 17:43:35] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2018-03-13 17:43:35] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+[2018-03-13 17:43:35] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader - Trying to infer dataType org.springframework.web.multipart.MultipartFile[]
+[2018-03-13 17:43:35] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Starting poller
+[2018-03-13 17:43:35] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2018-03-13 17:43:35] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8101"]
+[2018-03-13 17:43:35] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8101"]
+[2018-03-13 17:43:35] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-03-13 17:43:35] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8101 (http)
+[2018-03-13 17:43:35] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8101
+[2018-03-13 17:43:35] INFO  com.integrated.edu.Application - Started Application in 20.514 seconds (JVM running for 21.262)
+[2018-03-13 17:44:04] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:44:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:44:10] INFO  com.integrated.edu.zuul.adm.web.AccessFilter - Load funcs is：
+{}
+{}
+[2018-03-13 17:44:13] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-03-13 17:44:13] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-03-13 17:44:13] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+[2018-03-13 17:44:13] INFO  o.s.cloud.netflix.zuul.web.ZuulHandlerMapping - Mapped URL path [/sv-data/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+[2018-03-13 17:44:13] INFO  o.s.cloud.netflix.zuul.web.ZuulHandlerMapping - Mapped URL path [/sv-sys/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+[2018-03-13 17:44:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:44:55] INFO  o.s.cloud.netflix.zuul.web.ZuulHandlerMapping - Mapped URL path [/sv-xy/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+[2018-03-13 17:45:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:45:14] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@527239d6: startup date [Tue Mar 13 17:45:14 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5
+[2018-03-13 17:45:15] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:45:15] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-data.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:45:15] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-sv-data
+[2018-03-13 17:45:15] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: sv-data instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sv-data,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[2018-03-13 17:45:15] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+[2018-03-13 17:45:15] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-data.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:45:15] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client sv-data initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sv-data,current list of Servers=[127.0.0.1:8002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:127.0.0.1:8002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@37b3f4c
+[2018-03-13 17:45:16] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-data.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:45:16] WARN  o.s.c.netflix.zuul.filters.post.SendErrorFilter - Error during filtering
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:189)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:164)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:111)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:112)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118)
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96)
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:157)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.netflix.client.ClientException: null
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:118)
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:117)
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:46)
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:302)
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:298)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48)
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10247)
+	at rx.Observable.subscribe(Observable.java:10214)
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51)
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:411)
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:378)
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:344)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:158)
+	... 59 common frames omitted
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at rx.exceptions.Exceptions.propagate(Exceptions.java:58)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:464)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:341)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	... 121 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.springframework.cloud.netflix.ribbon.apache.RibbonLoadBalancingHttpClient.execute(RibbonLoadBalancingHttpClient.java:86)
+	at org.springframework.cloud.netflix.ribbon.apache.RibbonLoadBalancingHttpClient.execute(RibbonLoadBalancingHttpClient.java:42)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10151)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10247)
+	at rx.Observable.subscribe(Observable.java:10214)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:444)
+	... 123 common frames omitted
+[2018-03-13 17:45:33] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1afe93d4: startup date [Tue Mar 13 17:45:33 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d08f3f5
+[2018-03-13 17:45:33] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2018-03-13 17:45:33] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-xy.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:45:33] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-sv-xy
+[2018-03-13 17:45:33] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: sv-xy instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sv-xy,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[2018-03-13 17:45:33] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+[2018-03-13 17:45:33] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-xy.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:45:33] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client sv-xy initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sv-xy,current list of Servers=[127.0.0.1:8005],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:127.0.0.1:8005;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@28e58fd0
+[2018-03-13 17:45:34] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: sv-xy.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[2018-03-13 17:45:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:46:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:46:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:46:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:47:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:47:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:48:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:48:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:48:28] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:48:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:49:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:49:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:50:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:50:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:50:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:51:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:51:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:52:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:52:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:52:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:53:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:53:28] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:53:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:54:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:54:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:54:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:55:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:55:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:56:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:56:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:56:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:57:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:57:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:58:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 17:58:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:58:28] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 17:58:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:59:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 17:59:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:00:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:00:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:00:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:01:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:01:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:02:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:02:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:02:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:03:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:03:28] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 18:03:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:04:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:04:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:04:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:05:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:05:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:06:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:06:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:06:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:07:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:07:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:08:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:08:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:08:28] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2018-03-13 18:08:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:09:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:09:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:10:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:10:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:10:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:11:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:11:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:12:05] INFO  com.integrated.edu.zuul.adm.web.LuserHelper - Rmove 0 tokens from memory.
+[2018-03-13 18:12:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:12:35] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.
+[2018-03-13 18:13:05] INFO  c.i.e.comm.cloud.schedule.impl.ScheduleServiceImpl - Cloud schedule active “10.86.76.140:zuul-adm”.

@@ -1,0 +1,33 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+redis:
+  host: 106.15.199.123
+  port: 6379
+  password: zaq1xsw2@redis
+  database: 6
+  pool:
+    maxTotal: 20
+    maxIdle: 10
+    maxWaitMillis: -1
+mq:
+  namesrv: 106.15.199.123:9876
+res:
+  file_p: /usr/app/ppx/file/file_p
+  file_s: /usr/app/ppx/file/file_s
+  file_u: /usr/app/ppx/file/file_u
+  ver: 201807191200
+impt:
+  assign: auto
+host:
+  loc: false
+  res: http://ppx-res-dev.show.cn
+  zuul-adm: http://ppx-zuul-adm-dev.show.cn
+  zuul-xy: http://ppx-zuul-xy-dev.show.cn
+  zuul-wx: http://ppx-zuul-wx-dev.show.cn
+  zuul-ws: http://ppx-ws-dev.show.cn
+  zuul-pad: http://ppx-pad-dev.show.cn
+  spa-adm: http://ppx-adm-dev.show.cn
+  spa-xy: http://ppx-xy-dev.show.cn
+  spa-wx: http://ppx-wx-dev.show.cn
